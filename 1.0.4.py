@@ -234,12 +234,6 @@ def upload_files(sd_mount, log_func, counters, update_status_func, update_storag
                     continue
                 executor.submit(upload_file, local_path, remote_folder, file, log_func, counters)
 
-# Save this part now and continue writing the GUI part in the next cell.
-
-# --- GUI APP ---
-
-
-
 def check_for_updates(auto=False):
     import urllib.request, shutil, os, sys, subprocess, tempfile
     try:
